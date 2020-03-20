@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <?!= include("Page-Css"); ?>
+    <base target="_top">
+   
+    <title>NCUJHS</title>
+  </head>
+ 
+ <body>
+    <div>
+    <h1 class="center-align">N.C.U.J.H.S. - Add Record</h1>
+  </div>
+   
+   <div class="container">
+   
+  
+     <div class="row">
+      <div class="col s12">
+       <a href= "<?= ScriptApp.getService().getUrl(); ?>?v=loadHome" class="waves-effect waves-light btn"><i class="material-icons left">home</i>Home</a>
+        <div class="row">
+          <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input type="text" id="studentName" class="autocomplete">
+          <label for="studentName">Student Name</label>
+          </div> <!--- End Name --->
+          <div class="row">
+           
+           <!--- Cselect a category --->
+     <div class="input-field col s6">
+    <select id = "category">
+      <option  value = "" disabled selected>Choose your category</option>
+      <? for(var i=0;i<list.length;i++){ ?>
+      <option><?= list[i]; ?></option>
+     <? } ?>
+    </select>
+    <label>Category</label>
+  </div>
+           
+       <!--    
+            <form action="#">
+            <p>
+            <label>
+            <input name="group1" type="radio" checked />
+            <span>Student Concern</span>
+            </label>
+            </p>
+            <p>
+            <label>
+            <input name="group1" type="radio" />
+            <span>Parent Contact</span>
+            </label>
+            </p>
+            <p>
+            <label>
+            <input  name="group1" type="radio"  />
+            <span>Discipline Referal</span>
+            </label>
+            </p>
+          
+            </form>
+            -->
+            
+            
+            
+            <div class="row">
+            <div class="input-field col s12">
+          <input id="comment" type="text" class="validate">
+          <label for="comment">Comment</label>
+        </div>
+            <div class="row">
+              <button id = "submitRecord" class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+              </button>
+            </div>
+        </div>
+        </div>
+       
+      
+        
+        
+      
+    </div>
+  </div>
+        
+      
+    
+    </div> <!--- Close Container --->
+    
+    
+    <?!= include("addRecord-js"); ?>
+    
+  </body>
+</html>
+
+

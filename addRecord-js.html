@@ -1,0 +1,39 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+    <script>
+ 
+  
+   var userEmail = google.script.run.withSuccessHandler().getUserEmail();
+              
+       document.addEventListener("DOMContentLoaded",function(){
+        
+         google.script.run.withSuccessHandler(populateNames).getStudentList();
+          var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems );   
+      });
+      
+        // click to search student name
+      document.getElementById("submitRecord").addEventListener("click", submitRecord);
+     
+     function submitRecord(){
+     var studentName = document.getElementById('studentName').value;
+     var comment = document.getElementById('comment').value;
+     var category = document.getElementById('category').value;
+      google.script.run.withSuccessHandler().addRecord(studentName,comment,category);
+      
+      document.getElementById('studentName').value = "";
+      document.getElementById('comment').value = "";
+      var instances = M.FormSelect.init(elems );  
+     };
+      
+      //populate names for autocomplete
+      function populateNames(names){
+        var elems = document.getElementById('studentName');
+        var instances = M.Autocomplete.init(elems, {data: names});
+        
+       };
+       
+     
+      
+    </script>
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <?!= include("Page-Css"); ?>
+    <base target="_top">
+   
+    <title>NCUJHS</title>
+  </head>
+ 
+ <body>
+    <div>
+    <h1 class="center-align">N.C.U.J.H.S. - Lookup Student</h1>
+  </div>
+   
+   <div class="container">
+   
+  
+     <div class="row">
+    <div class="col s12">
+     <a href= "<?= ScriptApp.getService().getUrl(); ?>?v=loadHome" class="waves-effect waves-light btn"><i class="material-icons left">home</i>Home</a>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input type="text" id="studentName" class="autocomplete">
+          <label for="studentName">Student Name</label>
+          <a id = "searchStudent" class="waves-effect waves-light btn-small"><i class="material-icons right">search</i>Search</a>
+        </div>
+      </div>
+    </div>
+  </div>
+        
+      
+       <!-- table of data --->
+       
+         <table>
+        <thead>
+          <tr>
+              <th>Student Name</th>
+              <th>Teacher</th>
+              <th>Date</th>
+              <th>Category</th>
+              <th>Comments</th>
+          </tr>
+        </thead>
+
+        <tbody id="table-body">
+        
+        </tbody>
+      </table>
+      
+    
+    </div> <!--- Close Container --->
+    
+    
+    <?!= include("Page-js"); ?>
+    
+  </body>
+</html>
+
+
