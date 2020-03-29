@@ -53,9 +53,17 @@ function handleKey(e) {
 }
 //clear / shake function
 function shakeTheScreen() {
-	console.log('shake');
-	canvas.classList = 'shake';
+	canvas.classList.add('shake');
+	canvas.addEventListener(
+		'animationend',
+		function() {
+			canvas.classList.remove('shake');
+			console.log('dfghdhgfd');
+		},
+		{ once: true }
+	);
 }
-shakeButton.addEventListener('click', shakeTheScreen);
+
 //listen for arrow keys
 window.addEventListener('keydown', handleKey);
+shakeButton.addEventListener('click', shakeTheScreen);
