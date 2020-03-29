@@ -54,6 +54,7 @@ function handleKey(e) {
 //clear / shake function
 function shakeTheScreen() {
 	console.log('shake');
+	canvas.classList = 'shake';
 }
 shakeButton.addEventListener('click', shakeTheScreen);
 //listen for arrow keys
