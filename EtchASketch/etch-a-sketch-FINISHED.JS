@@ -52,6 +52,9 @@ function handleKey(e) {
 	}
 }
 //clear / shake function
-
+function shakeTheScreen() {
+	console.log('shake');
+}
+shakeButton.addEventListener('click', shakeTheScreen);
 //listen for arrow keys
 window.addEventListener('keydown', handleKey);
