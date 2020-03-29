@@ -23,7 +23,7 @@ function draw({ key }) {
 	console.log(key);
 	ctx.beginPath();
 	ctx.moveTo(x, y);
-	hue = hue + 1;
+	hue = hue + 10;
 	ctx.strokeStyle = `hsl(${hue},100%,50%)`;
 	switch (key) {
 		case 'ArrowUp':
