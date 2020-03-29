@@ -59,6 +59,7 @@ function shakeTheScreen() {
 		function() {
 			canvas.classList.remove('shake');
 			console.log('dfghdhgfd');
+			ctx.clearRect(0, 0, width, height);
 		},
 		{ once: true }
 	);
