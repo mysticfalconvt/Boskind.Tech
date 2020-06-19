@@ -34,3 +34,4 @@ FBRange.addEventListener('keydown', function(e) {
 		FizzBuzz(parseInt(FBRange.value), FBTable);
 	}
 });
+
