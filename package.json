@@ -1,0 +1,22 @@
+{
+  "name": "boskind-tech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mysticfalconvt/Boskind.Tech.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mysticfalconvt/Boskind.Tech/issues"
+  },
+  "homepage": "https://github.com/mysticfalconvt/Boskind.Tech#readme",
+  "dependencies": {
+    "eslint": "^6.8.0"
+  }
+}
