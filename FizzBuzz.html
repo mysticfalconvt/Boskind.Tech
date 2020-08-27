@@ -2,62 +2,67 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Boskind.Tech</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="Style.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <!-- navbar -->
-        <nav class="blue-grey">
-                <div class="container">
-                    <div class="nav-wrapper">
-                    <a href="#!" class="brand-logo right">Boskind.Tech</a>
-                    <ul class="left hide-on-med-and-down">
-                        <li><a href="/rgbGame">RGB Color Game</a></li>
-                        <li class = "active"><a href="badges.html">FizzBuzz</a></li>
-                        <li ><a href="index.html">Home</a></li>
-                    </ul>
-                    </div>
-                </div>
-        </nav>
-            <div class="container">
-                <div class="row">
-                    <h1>Boskind.Tech </h1>
-                </div>
-               
-                <div class="row">
-                    <div class="input-field col s6">
-                      <input value="15" id="FBRange" type="text" class="validate">
-                      <label class="active" for="FBRange">FizzBuzz Value</label>
-                    </div>
-                </div>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Boskind.Tech</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <!-- navbar -->
+    <nav class="blue-grey">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo left">Boskind.Tech</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/rgbGame">RGB Color Game</a></li>
+            <li class="active"><a href="badges.html">FizzBuzz</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <h1>Boskind.Tech</h1>
+      </div>
 
-                <table>
-                    <thead>
-                      <tr>
-                          <th>Number</th>
-                          <th>Response</th>
-                      </tr>
-                    </thead>
-            
-                    <tbody id="FizzBuzzTable">
-                      <tr>
-                       </tr>
-                     </tbody>
-                  </table>
-            </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input value="15" id="FBRange" type="text" class="validate" />
+          <label class="active" for="FBRange">FizzBuzz Value</label>
+        </div>
+      </div>
 
-        
-        <script src="FizzBuzz.js" async defer></script>
-    </body>
+      <table>
+        <thead>
+          <tr>
+            <th>Number</th>
+            <th>Response</th>
+          </tr>
+        </thead>
+
+        <tbody id="FizzBuzzTable">
+          <tr></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="FizzBuzz.js" async defer></script>
+  </body>
 </html>
